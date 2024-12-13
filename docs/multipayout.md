@@ -10,7 +10,7 @@ The workflow with this API consist of 2 steps:
 
 ## Auth
 
-Both endpoints requires HTTP Basic Auth using your Shkeeper's login and password.
+Both endpoints requires HTTP Basic Auth using your Flexcryptopay's login and password.
 
 ## Create a multipayout task
 

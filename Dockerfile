@@ -2,7 +2,7 @@ FROM ubuntu:focal
 
 RUN apt-get update && apt-get -y install python3 python3-pip git sqlite3 curl
 
-WORKDIR /shkeeper.io
+WORKDIR /flexcryptopay
 
 COPY . .
 
@@ -16,4 +16,4 @@ CMD gunicorn \
     --worker-class gthread \
     --timeout 30 \
     -b 0.0.0.0:5000 \
-    "shkeeper:create_app()"
+    "flexcryptopay:create_app()"
