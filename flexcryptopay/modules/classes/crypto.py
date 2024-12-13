@@ -31,8 +31,8 @@ class Crypto(abc.ABC):
             # Monero
             "Monero",
             # BNB
-            "bnb",
-            "bnb_usdt",
+            #"bnb",
+            #"bnb_usdt",
             "bnb_usdc",
             # XRP
             "xrp",
@@ -46,8 +46,17 @@ class Crypto(abc.ABC):
             "avalanche_usdc",
             # Lightning
             "BitcoinLightning",
+            "btc",
+            "ltc",
+            "doge"
         ]
-        default_on = ["btc", "ltc", "doge"]
+        default_on = [
+        #    "btc", 
+        #   "ltc", 
+        #    "doge"
+            "bnb",
+            "bnb_usdt"
+        ]
         for symbol in default_off:
             if cls.__name__ == symbol and (
                 f"{symbol.upper()}_WALLET" not in os.environ
